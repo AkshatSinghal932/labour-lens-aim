@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 96%; /* Light Gray - Changed */
+    --foreground: 0 0% 0%; /* Black - Changed */
+
+    --card: 0 0% 98%; /* Off-white - Changed */
+    --card-foreground: 0 0% 0%; /* Black - Changed */
+
+    --popover: 0 0% 98%; /* Off-white - Changed */
+    --popover-foreground: 0 0% 0%; /* Black - Changed */
+
+    --primary: 0 0% 15%; /* Dark Gray - Changed */
+    --primary-foreground: 0 0% 100%; /* White - Changed */
+
+    --secondary: 0 0% 94%; /* Light Gray - Changed */
+    --secondary-foreground: 0 0% 10%; /* Off-black - Changed */
+
+    --muted: 0 0% 90%; /* Medium Light Gray - Changed */
+    --muted-foreground: 0 0% 40%; /* Medium Dark Gray - Changed */
+
+    --accent: 0 0% 90%; /* Medium Light Gray for hover - Changed */
+    --accent-foreground: 0 0% 0%; /* Black - Changed */
+
+    --destructive: 0 84.2% 60.2%; /* Red for destructive actions - Kept */
+    --destructive-foreground: 0 0% 98%; /* White - Kept */
+
+    --border: 0 0% 85%; /* Gray - Changed */
+    --input: 0 0% 90%; /* Medium Light Gray - Changed */
+    --ring: 0 0% 50%; /* Medium Dark Gray for focus rings - Changed */
+
+    --radius: 0.5rem;
+
+    /* Sidebar specific variables */
+    --sidebar-background: 0 0% 96%; /* Light Gray, same as page background */
+    --sidebar-foreground: 0 0% 0%; /* Black */
+    --sidebar-primary: 0 0% 15%; /* Dark Gray */
+    --sidebar-primary-foreground: 0 0% 100%; /* White */
+    --sidebar-accent: 0 0% 88%; /* Lighter Gray for hover */
+    --sidebar-accent-foreground: 0 0% 0%; /* Black */
+    --sidebar-border: 0 0% 80%; /* Gray */
+    --sidebar-ring: 0 0% 50%; /* Medium Dark Gray */
+
+    /* Chart colors - shades of gray */
+    --chart-1: 0 0% 70%; /* Light Gray */
+    --chart-2: 0 0% 50%; /* Medium Gray */
+    --chart-3: 0 0% 30%; /* Dark Gray */
+    --chart-4: 0 0% 60%; /* Lighter Medium Gray */
+    --chart-5: 0 0% 40%; /* Darker Medium Gray */
+  }
+
+  .dark {
+    --background: 0 0% 8%; /* Very Dark Gray - Changed */
+    --foreground: 0 0% 100%; /* White - Changed */
+
+    --card: 0 0% 10%; /* Off-black - Changed */
+    --card-foreground: 0 0% 100%; /* White - Changed */
+
+    --popover: 0 0% 10%; /* Off-black - Changed */
+    --popover-foreground: 0 0% 100%; /* White - Changed */
+
+    --primary: 0 0% 85%; /* Light Gray - Changed */
+    --primary-foreground: 0 0% 0%; /* Black - Changed */
+
+    --secondary: 0 0% 15%; /* Dark Gray - Changed */
+    --secondary-foreground: 0 0% 90%; /* Off-white - Changed */
+
+    --muted: 0 0% 20%; /* Dark Gray - Changed */
+    --muted-foreground: 0 0% 60%; /* Light Gray - Changed */
+
+    --accent: 0 0% 20%; /* Dark Gray for hover - Changed */
+    --accent-foreground: 0 0% 100%; /* White - Changed */
+
+    --destructive: 0 72.2% 50.6%; /* Darker Red - Kept */
+    --destructive-foreground: 0 0% 98%; /* White - Kept */
+
+    --border: 0 0% 25%; /* Dark Gray - Changed */
+    --input: 0 0% 20%; /* Dark Gray - Changed */
+    --ring: 0 0% 60%; /* Light Gray for focus rings - Changed */
+
+    /* Sidebar specific variables for dark mode */
+    --sidebar-background: 0 0% 8%; /* Very Dark Gray, same as page background */
+    --sidebar-foreground: 0 0% 100%; /* White */
+    --sidebar-primary: 0 0% 85%; /* Light Gray */
+    --sidebar-primary-foreground: 0 0% 0%; /* Black */
+    --sidebar-accent: 0 0% 25%; /* Darker Gray for hover */
+    --sidebar-accent-foreground: 0 0% 100%; /* White */
+    --sidebar-border: 0 0% 30%; /* Dark Gray */
+    --sidebar-ring: 0 0% 60%; /* Light Gray */
+
+    /* Chart colors - shades of gray for dark mode */
+    --chart-1: 0 0% 40%;
+    --chart-2: 0 0% 60%;
+    --chart-3: 0 0% 80%;
+    --chart-4: 0 0% 50%;
+    --chart-5: 0 0% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
